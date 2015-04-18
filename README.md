@@ -12,6 +12,7 @@ cd digital-ocean-jenkins-dev-environment
 scp [your-private-digital-ocean-ssh-key] root@[do-public]:/root/.ssh/id_rsa
 ./configure-digital-ocean.sh [your-personal-access-token] [ssh-key-names] [location]
 salt-cloud --list-sizes digitalocean
+salt-cloud -p digitalocean-ubuntu salt-cloud 
 ```
 
 ## configure-digital-ocean.sh Example CLI: ##
