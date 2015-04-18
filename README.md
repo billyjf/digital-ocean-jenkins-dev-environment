@@ -20,6 +20,7 @@ cat > /root/.ssh/id_rsa << _EOF_
 ...
 -----END RSA PRIVATE KEY-----
 _EOF_
+chmod 600 /root/.ssh/id_rsa
 ./configure-digital-ocean.sh "ab983fs ... pw9" salt-cloud "San Francisco 1"
 ```
 
