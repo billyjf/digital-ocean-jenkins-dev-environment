@@ -12,7 +12,7 @@ cat > /etc/salt/cloud.providers.d/digitalocean.conf <<_EOF_
 digitalocean:
   provider: digital_ocean
   personal_access_token: $personal_access_token
-  ssh_key_file: ~/.ssh/id_rsa
+  ssh_key_file: /root/.ssh/id_rsa
   ssh_key_names: "$ssh_key_names"
   location: "$location"
 _EOF_
@@ -20,7 +20,7 @@ _EOF_
 cat > /etc/salt/cloud.profiles.d/digitalocean.conf <<_EOF_
 digitalocean-ubuntu:
   provider: digitalocean
-  image: "Ubuntu 14.04 x64"
+  image: "14.04 x64"
   size: 1GB
   location: "$location"
   private_networking: False

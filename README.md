@@ -9,7 +9,7 @@ Use salt-cloud to instantly spin up a new Jenkins dev environment on Digital Oce
 git clone https://github.com/billyjf/digital-ocean-jenkins-dev-environment.git
 cd digital-ocean-jenkins-dev-environment
 ./install-salt-cloud.sh
-scp [your-private-digital-ocean-ssh-key] root@[do-public]:~/.ssh/id_rsa
+scp [your-private-digital-ocean-ssh-key] root@[do-public]:/root/.ssh/id_rsa
 ./configure-digital-ocean.sh [your-personal-access-token] [ssh-key-names] [location]
 salt-cloud --list-sizes digitalocean
 ```
